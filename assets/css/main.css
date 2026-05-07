@@ -4723,6 +4723,11 @@ input, select, textarea {
 .carousel .next {
   right: 10px;
 }
+
+.carousel.carousel-portrait {
+  max-width: 320px;
+  margin: 0 auto 1.5rem auto;
+}
 .lightbox {
   display: none;
   position: fixed;
@@ -4742,3 +4747,61 @@ input, select, textarea {
   border: 4px solid white;
   box-shadow: 0 0 20px black;
 }
+
+/* Video Player */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 1.5rem auto;
+  background: #000;
+}
+
+  .video-wrapper video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+/* Tech Stack Tags */
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.75rem 0;
+  justify-content: center;
+}
+
+  .tech-tags li {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.85rem;
+    border: solid 2px #18bfef;
+    color: #18bfef;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+/* Skills Section */
+
+  .skills-section .table-wrapper {
+    margin-top: 1.5rem;
+  }
+
+  .skills-section table th {
+    width: 28%;
+  }
+
+/* Contact Section */
+
+  .contact-section textarea {
+    min-height: 8rem;
+    resize: vertical;
+  }
